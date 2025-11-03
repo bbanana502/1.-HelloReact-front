@@ -15,7 +15,7 @@ function Navbar() {
     ));
 
   return (
-    <div>
+    <div className={styles.back}>
       <div className={styles.top}>
         <div className={styles.header1}>{renderWithBar(header1)}</div>
         <div className={styles.header2}>{renderWithBar(header2)}</div>
@@ -38,6 +38,7 @@ function Navbar() {
         </div>
       </div>
     </div>
+    
   );
 }
 

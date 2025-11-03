@@ -1,6 +1,6 @@
 
 .top{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
@@ -29,17 +29,15 @@
 .headt{
     font-size: 12px;
     color: #888989;
-    margin: 0 5px;
 }
 .bar{
     font-size: 12px;
     color: #E8E9E9;
-    margin: 0 5px;
 }
 .logo{
     font-size: 20px;
     font-weight: 900;
-    width: fit-content;
+    width: auto;
     margin-right: 10px;
     display: inline-flex;
     align-items: center;
@@ -48,7 +46,7 @@
 .menu{
     display: inline-flex;
     font-size: 16px;
-    width: fit-content;
+    width: auto;
     height: 40px;
     align-items: center;
     font-weight: 500;
@@ -57,8 +55,8 @@
 
 
 .middletop{
-    position: fixed;
-    top: 56px;
+    position: sticky;
+    top: 0;
     left: 0;
     right: 0;
     display: flex;
@@ -66,11 +64,13 @@
     gap: 24px;
     padding: 12px 170px;
     background-color: #ffffff;
-    z-index: 30;
+    z-index: 50;
     box-sizing: border-box;
     height: 64px;
+    width: 100vw;
     flex-wrap: nowrap;
     white-space: nowrap;
+    margin: 0px 0px;
 }
 
 .search{
@@ -84,28 +84,29 @@
     box-sizing: border-box;
 }
 
-.underback{
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 120px;
-    height: 600px;
-    background-color: #F4F4F4;
-    z-index: 10;
-}
 
 .searchbar {
   position: relative;
   width: 300px;
-  margin: 210px;
+  margin-left: 185px;
 }
 
 .searchicon {
   position: absolute;
-  right: 10px;
+  right: 10;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 18px;
+  width: fit-content;
+  height: fit-content;
   color: #555;
   pointer-events: none;
+}
+.back
+{
+    height: 3600px;
+    width: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
 }
